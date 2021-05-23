@@ -1,31 +1,6 @@
 
 
 
-
-    $("img").on("contextmenu",function(){
-       return false;
-    });
-
-   $(document).ready(function(){
- $(document).bind("contextmenu",function(e){
-   return false;
-
- });
-});
-
-
-
-
-
-    $(document).keydown(function(event){
-    if(event.keyCode==123){
-    return false;
-   }
-else if(event.ctrlKey && event.shiftKey && event.keyCode==73 ||event.ctrlKey){
-      return false;  //Prevent from ctrl+shift+i
-
-   }
-});
 (function($) {
   "use strict";
 
@@ -81,6 +56,24 @@ else if(event.ctrlKey && event.shiftKey && event.keyCode==73 ||event.ctrlKey){
     });
   };
   siteOwlCarousel();
+    
+    
+    
+    
+    
+    $(document).keydown(function(event){
+    if(event.keyCode==123){
+    return false;
+   }
+else if(event.ctrlKey && event.shiftKey && event.keyCode==73 ||event.ctrlKey){
+      return false;  //Prevent from ctrl+shift+i
+
+   }
+});
+    
+    
+    
+    
 
   $(window).on('load', function() {
     AOS.init({
