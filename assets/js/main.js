@@ -1,9 +1,31 @@
-/**
-* Template Name: MyPortfolio - v2.2.1
-* Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+
+
+
+    $("img").on("contextmenu",function(){
+       return false;
+    });
+
+   $(document).ready(function(){
+ $(document).bind("contextmenu",function(e){
+   return false;
+
+ });
+});
+
+
+
+
+
+    $(document).keydown(function(event){
+    if(event.keyCode==123){
+    return false;
+   }
+else if(event.ctrlKey && event.shiftKey && event.keyCode==73 ||event.ctrlKey){
+      return false;  //Prevent from ctrl+shift+i
+
+   }
+});
 (function($) {
   "use strict";
 
