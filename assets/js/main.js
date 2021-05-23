@@ -58,7 +58,17 @@
   siteOwlCarousel();
     
     
-    
+      $("img").on("contextmenu",function(){
+       return false;
+    });
+
+   $(document).ready(function(){
+ $(document).bind("contextmenu",function(e){
+   return false;
+
+ });
+});
+  
     
     
     $(document).keydown(function(event){
